@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -11,24 +12,61 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
   justify-content: center;
   background-image: radial-gradient(ellipse, $color-buttercup, $color-gamboge);
 
   h1 {
     color: $color-white;
+    font-weight: bold;
     // font-size: 3.8125rem; default
-    font-size: 2rem;
+    // font-size: 2rem;
   }
 
-  a {
+  .welcome__description {
+    line-height: 1.5;
+    padding: 0 0.5rem;
+  }
+
+  a.scroll-down {
     color: $color-white;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    border: 0.1rem solid $color-white;
+    position: relative;
+    background-color: $color-fuel-yellow;
+    padding-right: 1.5rem;
+
+    &:hover {
+      border: 0.1rem solid $color-buttercup;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0.5rem;
+      top: 1.2rem;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 0.5rem solid $color-white;
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+    }
   }
 
   // & > div {
   //   width: 100%;
   // }
+}
+
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
 }
 
 // * {
