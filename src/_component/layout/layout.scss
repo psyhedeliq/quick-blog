@@ -7,6 +7,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 10px;
+}
+
 .welcome {
   height: 100%;
   display: flex;
@@ -14,7 +18,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(ellipse, $color-buttercup, $color-gamboge);
+  background-image: radial-gradient(ellipse, $color-normal, $color-dark);
 
   h1 {
     color: $color-white;
@@ -37,17 +41,23 @@ body {
     margin: 1rem;
     border: 0.1rem solid $color-white;
     position: relative;
-    background-color: $color-fuel-yellow;
-    padding-right: 1.5rem;
+    background-color: $color-dark;
+    padding-right: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
-      border: 0.1rem solid $color-buttercup;
+      border: 0.1rem solid $color-normal;
     }
+  }
 
+  .continue-arrow {
+    margin: 0 0.3rem;
     &::after {
       position: absolute;
-      right: 0.5rem;
-      top: 1.2rem;
+      // right: 0.5rem;
+      // top: 1.2rem;
       content: "";
       display: block;
       width: 0;
@@ -57,10 +67,6 @@ body {
       border-right: 0.5rem solid transparent;
     }
   }
-
-  // & > div {
-  //   width: 100%;
-  // }
 }
 
 @media screen and (min-width: 25em) {
