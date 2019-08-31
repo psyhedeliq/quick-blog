@@ -1,0 +1,15 @@
+extends ../_component/layout/base
+
+block config
+  -
+    const title = template.head.title || 'Template title(Change Me!)';
+    const description = template.head.description || 'Template description(Change Me!)';
+block content
+  .content
+    each item in template.body
+      if item.type === 'h2'
+        h2=item.data
+      if item.type === 'p'
+        each paragraph in item.data
+          p=paragraph
+    //- pre=JSON.stringify(template.body, null, 2)
