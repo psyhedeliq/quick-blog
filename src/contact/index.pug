@@ -4,21 +4,23 @@ block config
     const title = 'Contact Quick Blog';
     const description = 'Contact me, the creator, Cornel Cristian Filip.';
 block content
-  .content
-    h2 Contact Information
-    p You can find me on these social media platforms:
-    ul
-      li
-        a(href='https://www.facebook.com/cornel.filip', title='Click to go to Facebook', target='_blank') Facebook
-      li
-        a(href='https://www.linkedin.com/in/cornelfilip/', target='_blank', title='Click to go to LinkedIn') LinkedIn
-      li
-        a(href='https://twitter.com/CornelCristianF', target='_blank',title='Click to go to Twitter') Twitter
-      li
-        a(href='https://github.com/psyhedeliq', target='_blank',title='Click to go to GitHub') GitHub
-    hr
-    figure.image-container
-      img.image(src=`${baseUrl}/asset/image/star-wars.jpg`)
-      figcaption.image-caption
-        strong Note:
-        span  3CPO and R2D2 
+  #continue
+    .content
+      h2 Contact Information
+      p You can find me on these social media platforms:
+      ul
+        li
+          a(href='https://www.facebook.com/cornel.filip', title='Click to go to Facebook', target='_blank') Facebook
+        li
+          a(href='https://www.linkedin.com/in/cornelfilip/', target='_blank', title='Click to go to LinkedIn') LinkedIn
+        li
+          a(href='https://twitter.com/CornelCristianF', target='_blank',title='Click to go to Twitter') Twitter
+        li
+          a(href='https://github.com/psyhedeliq', target='_blank',title='Click to go to GitHub') GitHub
+      hr
+      figure.image-container
+        img.image(src=`${baseUrl}/asset/image/star-wars.jpg`)
+        figcaption.image-caption
+          strong Note:
+          span  3CPO and R2D2 
+    include ../_component/top-arrow/top-arrow
