@@ -9,14 +9,14 @@ $color-dark: #000;
 }
 
 @if ($theme == "buttercup") {
-  $color-normal: #f1c40f;
-  $color-dark: #f39c12;
+  $color-normal: #20e7e8;
+  $color-dark: #2489ff;
 }
 
 @if ($theme == "zest") {
-  $color-normal: #e67e22;
-  $color-dark: #d35400;
+  $color-normal: #31d8ff;
+  $color-dark: #1ca0eb;
 }
 $color-athens-gray: #e7e9ec;
-$color-golden-gras: #dd9a2d;
+$color-golden-gras: #24ffd7;
 $color-white: #fff;
